@@ -17,6 +17,8 @@ Producer (Python) ──► Kafka topic: transactions ──► Spark fraud engi
                                                                               └─► PostgreSQL: fraud_alerts ───────┘
 ```
 
+![Architecture: Producer → Kafka → Spark → PostgreSQL → Power BI](final_project/notebooks/architecture.png)]
+
 Everything runs locally in Docker: Kafka broker, PostgreSQL 16, Redis, and a Jupyter/PySpark container.
 
 ## Repository contents
@@ -93,6 +95,8 @@ Relationship: `fraud_alerts[transaction_id]` → `processed_transactions[transac
 - **Fraud reasons breakdown**
 - **Latest High-Risk Transactions** table for investigation
 - Slicers for Risk Level and Merchant Category, plus a bookmark reset button
+
+![REAL-TIME ECOMMERCE FRAUD DETECTION DASHBOARD](dashboard/Dashboard_RTA_%20Final.png)
 
 ### DAX highlights
 
