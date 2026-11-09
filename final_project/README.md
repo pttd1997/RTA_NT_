@@ -17,7 +17,7 @@ Producer (Python) ──► Kafka topic: transactions ──► Spark fraud engi
                                                                               └─► PostgreSQL: fraud_alerts ───────┘
 ```
 
-![Architecture: Producer → Kafka → Spark → PostgreSQL → Power BI](final_project/notebooks/architecture.png)
+![Architecture: Producer → Kafka → Spark → PostgreSQL → Power BI](notebooks/architecture.png)
 
 Everything runs locally in Docker: Kafka broker, PostgreSQL 16, Redis, and a Jupyter/PySpark container.
 
